@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es" class="h">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resto</title>
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Libre+Franklin:wght@300;400&family=Rancho&display=swap" rel="stylesheet"> -->
+
+  <link rel="preload" href="assets/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/iconos/iconos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/img/logo.svg" as="image" onload="this.onload=null;this.rel='shortcut icon'"/>
+
+  <noscript><link rel="stylesheet" href="assets/fonts/fonts.css"></noscript>
+  <noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
+  <noscript><link rel="stylesheet" href="assets/iconos/iconos.css"></noscript>
+  <noscript><link rel="shortcut icon" href="assets/img/logo.svg"  type="image/x-icon"/></noscript>
+
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/iconos/iconos.css">
+  <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+
+  <meta name="title" content="Titulo">
+  <meta name="description" content="Descripcion">
+  <meta name="keywords" content="palabras clave">
+  <meta name="author" content="Autor">
+
+  <!-- <link rel="canonical" href="direccion importante"/> -->
+
+  <script defer src="assets/js/script.js"></script>
+
+</head>
+<body>
+  <header class="header w">
+    <div class="wrapper h row jc_sb">
+      <div class="logo">
+        <a href="#hero">Resto</a>
+      </div>
+      <nav class="nav h w">
+        <div class="nav_links row jc_sb h">
+          <a href="#contacto" class="nav_link">Contacto</a>
+          <a href="#expertos" class="nav_link">Nosotros</a>
+          <a href="/" class="resto_center">Resto</a>
+          <a href="#menu" class="nav_link">Menu</a>
+          <a href="#reserva" class="nav_link">Reservacion</a>
+        </div>
+        <div class="nav_info column jc_sb">
+          <a href="#" class="nav_link"><span class="ico ico-map"></span>Direccion</a>
+          <a href="#" class="nav_link"><span class="ico ico-phone"></span>Telefono</a>
+          <a href="#" class="nav_link"><span class="ico ico-clock"></span>Horarios</a>
+        </div>
+        <div class="nav_redes row jc_sb">
+          <a href="#" class="nav_link"><span class="ico ico-instagram"></span>Instagram</a>
+          <a href="#" class="nav_link"><span class="ico ico-facebook"></span>Facebook</a>
+          <a href="#" class="nav_link"><span class="ico ico-whatsapp"></span>Whatsapp</a>
+          <a href="#" class="nav_link"><span class="ico ico-twitter"></span>Twitter</a>
+        </div>
+      </nav>
+      <span class="overlay"></span>
+      <button class="btn_menu" aria-label="Menu de Navegacion">
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="hero w" id="hero">
+      <div class="wrapper">
+        <div class="grid_auto_fit cg_5 jc_sb hero_grid">
+          <div class="hero_texto column cg_5 ai_fs jc_sb">
+            <h1>Comida casera, <br>saludable y <strong>vegana.</strong></h1>
+            <div class="hero_btns row cg_5 ai_ct jc_sb">
+              <a href="#menu" class="btn_acc btn_ver_menu">Ver Menu</a>
+              <a href="#contacto" class="btn_local_cerca">Local Cerca</a>
+            </div>
+            <ul class="hero_mas_info row w cg_5 ai_fs jc_sb">
+              <li class="column cg_15">
+                <span class="ico ico-leaf"></span>
+                <span>Fresco</span>
+              </li>
+              <li class="column cg_15">
+                <span class="ico ico-rocket"></span>
+                <span>Rapido</span>
+              </li>
+              <li class="column cg_15">
+                <span class="ico ico-rocket"></span>
+                <span>Soporte</span>
+              </li>
+            </ul>
+          </div>
+          <div class="slider_hero w h column ai_fe" id="slider_hero">
+            <div class="slide_hero w h active">
+              <img data-src="assets/img/img3.jpg" class="w h" alt="No olvidar el alt">
+            </div>
+            <div class="slide_hero w h">
+              <img data-src="assets/img/img1.jpg" class="w h" alt="No olvidar el alt">
+            </div>
+            <div class="slide_hero w h">
+              <img data-src="assets/img/img9.jpg" class="w h" alt="No olvidar el alt">
+            </div>
+            <div class="flechas">
+              <button id="slide_hero_prev" aria-label="Siguiente Imagen"><span class="prev ico ico-prev"></span></button>
+              <button id="slide_hero_next" aria-label="Anterior Imagen"><span class="next ico ico-next"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="especiales" id="especiales">
+      <div class="wrapper">
+        <h2 class="sub">Especialidades</h2>
+        <span class="s_span w">de la casa</span>
+        <div class="especiales_grid grid_auto_fit ai_ct cg_5 jc_sb">
+          <div class="especiales_texto column cg_35 ai_fs jc_ct">
+            <span>Postres</span>
+            <h3>Yogurt Griego con Semillas y Fresas</h3>
+            <p>Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad</p>
+            <span class="precio">$150</span>
+            <a href="#contacto" class="btn_main btn_encargar">Encargar</a>
+          </div>
+          <div class="especiales_img w h">
+            <img data-src="assets/img/img1.jpg" alt="No olvidar el alt" class="w h">
+          </div>
+        </div>
+        <div class="especiales_grid grid_auto_fit ai_ct cg_5 jc_sb">
+          <div class="especiales_img">
+            <img data-src="assets/img/img9.jpg" alt="No olvidar el alt" class="w h">
+          </div>
+          <div class="especiales_texto column cg_35 ai_fs jc_ct">
+            <span>Almuerzo</span>
+            <h3>Sopa de Mani con Garbanzos</h3>
+            <p>Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad</p>
+            <span class="precio">$150</span>
+            <a href="#contacto" class="btn_main btn_encargar">Encargar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="menu" id="menu">
+    <div class="wrapper">
+      <h2 class="sub">Menu</h2>
+      <span class="s_span w">Veganisimo</span>
+      <div class="menu_grid grid_auto_fit ai_ct cg_5">
+        <div class="menu_islas column cg_5 jc_sb ai_ct">
+          <h3>Desayuno</h3>
+          <div class="menu_box row cg_15">
+            <img data-src="assets/img/img4.jpg" alt="No olvidar el alt" class="ar1_1">
+            <div class="menu_box_texto column ai_fs cg_15">
+              <div class="row jc_sb cg_35">
+                <h4>Cafe con Leche</h4>
+                <span>$150</span>
+              </div>
+              <p>3 criollitos, Mermelada</p>
+            </div>
+          </div>
+          <div class="menu_box row cg_15">
+            <img data-src="assets/img/img4.jpg" alt="No olvidar el alt" class="ar1_1">
+            <div class="menu_box_texto column ai_fs cg_15">
+              <div class="row jc_sb cg_35">
+                <h4>Cafe con Leche</h4>
+                <span>$150</span>
+              </div>
+              <p>3 criollitos, Mermelada</p>
+            </div>
+          </div>
+          <div class="menu_box row cg_15">
+            <img data-src="assets/img/img4.jpg" alt="No olvidar el alt" class="ar1_1">
+            <div class="menu_box_texto column ai_fs cg_15">
+              <div class="row jc_sb cg_35">
+                <h4>Cafe con Leche</h4>
+                <span>$150</span>
+              </div>
+              <p>3 criollitos, Mermelada</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu_islas column cg_5 jc_sb ai_ct">
+          <h3>Almuerzo</h3>
+          <div class="menu_box row cg_15">
+            <img data-src="assets/img/img4.jpg" alt="No olvidar el alt" class="ar1_1">
+            <div class="menu_box_texto column ai_fs cg_15">
+              <div class="row jc_sb cg_35">
+                <h4>Cafe con Leche</h4>
+                <span>$150</span>
+              </div>
+              <p>3 criollitos, Mermelada</p>
+            </div>
+          </div>
+          <div class="menu_box row cg_15">
+            <img data-src="assets/img/img4.jpg" alt="No olvidar el alt" class="ar1_1">
+            <div class="menu_box_texto column ai_fs cg_15">
+              <div class="row jc_sb cg_35">
+                <h4>Cafe con Leche</h4>
+                <span>$150</span>
+              </div>
+              <p>3 criollitos, Mermelada</p>
+            </div>
+          </div>
+          <div class="menu_box row cg_15">
+            <img data-src="assets/img/img4.jpg" alt="No olvidar el alt" class="ar1_1">
+            <div class="menu_box_texto column ai_fs cg_15">
+              <div class="row jc_sb cg_35">
+                <h4>Cafe con Leche</h4>
+                <span>$150</span>
+              </div>
+              <p>3 criollitos, Mermelada</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu_islas column cg_5 jc_sb ai_ct">
+          <h3>Merienda</h3>
+          <div class="menu_box row cg_15">
+            <img data-src="assets/img/img4.jpg" alt="No olvidar el alt" class="ar1_1">
+            <div class="menu_box_texto column ai_fs cg_15">
+              <div class="row jc_sb cg_35">
+                <h4>Cafe con Leche</h4>
+                <span>$150</span>
+              </div>
+              <p>3 criollitos, Mermelada</p>
+            </div>
+          </div>
+          <div class="menu_box row cg_15">
+            <img data-src="assets/img/img4.jpg" alt="No olvidar el alt" class="ar1_1">
+            <div class="menu_box_texto column ai_fs cg_15">
+              <div class="row jc_sb cg_35">
+                <h4>Cafe con Leche</h4>
+                <span>$150</span>
+              </div>
+              <p>3 criollitos, Mermelada</p>
+            </div>
+          </div>
+          <div class="menu_box row cg_15">
+            <img data-src="assets/img/img4.jpg" alt="No olvidar el alt" class="ar1_1">
+            <div class="menu_box_texto column ai_fs cg_15">
+              <div class="row jc_sb cg_35">
+                <h4>Cafe con Leche</h4>
+                <span>$150</span>
+              </div>
+              <p>3 criollitos, Mermelada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonio" id="testimonio">
+    <div class="wrapper">
+      <h2 class="sub">Cosumidor Feliz</h2>
+      <span class="s_span w">Testimonio</span>
+      <div class="slider_test flex jc_ct" id="slider_test">
+        <div class="slide_test active">
+          <img data-src="assets/img/img5.jpg" alt="No olvidar el alt" class="ar16_9">
+          <div class="slide_test_text column cg_5 jc_ct ai_ct">
+            <span class="ico ico-quotes"></span>
+            <p>Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad</p>
+            <p>Mara Spinoza</p>
+          </div>
+        </div>
+        <div class="slide_test">
+          <img data-src="assets/img/img6.jpg" alt="No olvidar el alt" class="ar16_9">
+          <div class="slide_test_text column cg_5 jc_ct ai_ct">
+            <span class="ico ico-quotes"></span>
+            <p>Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad</p>
+            <p>Matias Sosa</p>
+          </div>
+        </div>
+        <div class="slide_test">
+          <img data-src="assets/img/img5.jpg" alt="No olvidar el alt" class="ar16_9">
+          <div class="slide_test_text column cg_5 jc_ct ai_ct">
+            <span class="ico ico-quotes"></span>
+            <p>Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad</p>
+            <p>Maria Paula</p>
+          </div>
+        </div>
+        <div class="slide_test_puntos row cg_15 jc_sb">
+          <button class="circulo" id="slide_test_prev" aria-label="Siguiente Testimonio"></button>
+          <span class="circulo active"></span>
+          <button class="circulo" id="slide_test_next" aria-label="Anterior Testimonio"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="expertos" id="expertos">
+    <div class="wrapper">
+      <h2 class="sub">Nuestra Cocina</h2>
+      <span class="s_span w">Expertos</span>
+      <div class="grid_auto_fit jc_sb cg_5">
+        <div class="persona">
+          <img data-src="assets/img/img2.jpg" alt="No olvidar el alt"  class="ar9_16">
+          <div class="persona_texto column cg_15 jc_ct">
+            <h3>Rodrigo Russo</h3>
+            <span>Chef</span>
+            <div class="persona_redes row cg_5 jc_ct">
+              <a href="#expertos"><span class="ico ico-instagram"></span>Instagram</a>
+              <a href="#expertos"><span class="ico ico-facebook"></span>Facebook</a>
+              <a href="#expertos"><span class="ico ico-whatsapp"></span>Whatsapp</a>
+            </div>
+          </div>
+        </div>
+        <div class="persona">
+          <img data-src="assets/img/img7.jpg" alt="No olvidar el alt" class="ar9_16">
+          <div class="persona_texto column cg_15 jc_ct">
+            <h3>Maria Olivos</h3>
+            <span>Chef</span>
+            <div class="persona_redes row cg_5 jc_ct">
+              <a href="#expertos"><span class="ico ico-instagram"></span>Instagram</a>
+              <a href="#expertos"><span class="ico ico-facebook"></span>Facebook</a>
+              <a href="#expertos"><span class="ico ico-whatsapp"></span>Whatsapp</a>
+            </div>
+          </div>
+        </div>
+        <div class="persona">
+          <img data-src="assets/img/img8.jpg" alt="No olvidar el alt" class="ar9_16">
+          <div class="persona_texto column cg_15 jc_ct">
+            <h3>Fabiano Caruana</h3>
+            <span>Chef</span>
+            <div class="persona_redes row cg_5 jc_ct">
+              <a href="#expertos"><span class="ico ico-instagram"></span>Instagram</a>
+              <a href="#expertos"><span class="ico ico-facebook"></span>Facebook</a>
+              <a href="#expertos"><span class="ico ico-whatsapp"></span>Whatsapp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reserva" id="reserva">
+    <div class="wrapper column jc_ct ai_fe h">
+      <img data-src="assets/img/img6.jpg" alt="Photo by Ketut Subiyanto from Pexels" class="h w">
+      <div class="reserva_content">
+        <span class="s_span w">Te Esperamos</span>
+        <h2 class="sub">Reservaciones</h2>
+        <form class="form column cg_15" id="form" name="Formulario_De_Contacto">
+          <div class="reserva_box">
+            <label for="name" class="name_label">Nombre</label>
+            <input type="text" id="name" maxlength="25" name="name" class="name" required></input>
+          </div>
+          <div class="reserva_box">
+            <label for="phone" class="tel_label">Teléfono</label>
+            <input type="number" id="phone" name="phone" class="tel" min="6" required></input>
+          </div>
+          <div class="reserva_box fecha row jc_sb ai_ct w h cg_5">
+            <div class="w h column">
+              <label for="date" class="date_label">Fecha</label>
+              <input type="date" id="date" name="date" class="date" min="6" required></input>
+            </div>
+            <div class="w h column">
+              <label for="time" class="time_label">Hora</label>
+              <input type="time" id="time" name="time" class="time" min="6" required></input>
+            </div>
+          </div>
+          <div class="reserva_box">
+            <label for="amount" class="amount_label">Teléfono</label>
+            <input type="number" id="amount" name="amount" class="amount" min="6" required></input>
+          </div>
+          <div class="reserva_box">
+            <label for="message" class="message_label">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+          </div>
+          <div class="reserva_box enviar w row jc_sb ai_ct">
+            <button type="submit" class="btn_acc btn_form" id="submitForm" value="Enviar" aria-roledescription="Enviar Formulario" name="Enviar Formulario">Enviar</button>
+            <div class="enviado" id="enviado">
+              <span>Enviando Mensaje....</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contacto">
+    <div class="wrapper">
+      <div class="grid_auto_fit cg_5 footer_content ai_ct jc_ct">
+        <div class="footer_box footer_texto column ai_fs cg_5">
+          <h2>Resto</h2>
+          <p>Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad</p>
+          <span>2009 - 2022</span>
+          <div class="redes_sociales row jc_fs cg_5 w">
+            <a href="#" class="footer_link"><span class="ico ico-instagram"></span>Instagram</a>
+            <a href="#" class="footer_link"><span class="ico ico-facebook"></span>Facebook</a>
+            <a href="#" class="footer_link"><span class="ico ico-whatsapp"></span>Whatsapp</a>
+            <a href="#" class="footer_link"><span class="ico ico-twitter"></span>Twitter</a>
+          </div>
+        </div>
+        <div class="footer_box horarios column ai_fs cg_35">
+          <h3>Horarios</h3>
+          <div class="horas row jc_sb cg_5">
+            <ul class="column ai_fs cg_15">
+              <li>Lunes</li>
+              <li>Martes</li>
+              <li>Miercoles</li>
+              <li>Jueves</li>
+              <li>Viernes</li>
+              <li>Sabado</li>
+              <li>Domingo</li>
+            </ul>
+            <ul class="column ai_fs cg_15">
+              <li>9:00 - 21:00</li>
+              <li>9:00 - 21:00</li>
+              <li>9:00 - 21:00</li>
+              <li>9:00 - 21:00</li>
+              <li>9:00 - 21:00</li>
+              <li>9:00 - 21:00</li>
+              <li>9:00 - 21:00</li>
+            </ul>
+          </div>
+          <h3>Telefono</h3>
+          <div class="row jc_sb cg_15">
+            <span class="ico ico-phone"></span>
+            <a href="tel:+54 351 75080XX">+54 351 75080XX</a>
+          </div>
+        </div>
+        <div class="footer_box direccion column ai_fs cg_15">
+          <h3>Direccion</h3>
+          <div class="dire row jc_sa cg_35">
+            <span class="ico ico-map"></span>
+            <p>Humberto Primo 771 <br> Cordoba Capital, Bv Centro</p>
+          </div>
+          <img data-src="assets/img/mapa.png" alt="Nuestra Direccion marcada en un mapa">
+        </div>
+      </div>
+      <p class="firma">2022 - Diseñado por @Uncoder</p>
+    </div>
+  </footer>
+</body>
+</html>
